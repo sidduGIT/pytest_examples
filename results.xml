@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="2" hostname="siddu-VirtualBox" name="pytest" skipped="0" tests="7" time="0.103" timestamp="2020-01-20T16:42:46.939721"><testcase classname="test_parametrize" file="test_parametrize.py" line="2" name="test_multiplication[1-11]" time="0.002"></testcase><testcase classname="test_parametrize" file="test_parametrize.py" line="2" name="test_multiplication[2-22]" time="0.002"></testcase><testcase classname="test_parametrize" file="test_parametrize.py" line="2" name="test_multiplication[3-34]" time="0.006"><failure message="assert 33 == 34
+  -33
+  +34">num = 3, output = 34
+
+    @pytest.mark.parametrize(&apos;num,output&apos;,[(1,11),(2,22),(3,34),(4,44),(5,56),(6,66),(7,77)])
+    
+    def test_multiplication(num,output):
+&gt;       assert 11*num==output
+E       assert 33 == 34
+E         -33
+E         +34
+
+test_parametrize.py:6: AssertionError</failure></testcase><testcase classname="test_parametrize" file="test_parametrize.py" line="2" name="test_multiplication[4-44]" time="0.002"></testcase><testcase classname="test_parametrize" file="test_parametrize.py" line="2" name="test_multiplication[5-56]" time="0.002"><failure message="assert 55 == 56
+  -55
+  +56">num = 5, output = 56
+
+    @pytest.mark.parametrize(&apos;num,output&apos;,[(1,11),(2,22),(3,34),(4,44),(5,56),(6,66),(7,77)])
+    
+    def test_multiplication(num,output):
+&gt;       assert 11*num==output
+E       assert 55 == 56
+E         -55
+E         +56
+
+test_parametrize.py:6: AssertionError</failure></testcase><testcase classname="test_parametrize" file="test_parametrize.py" line="2" name="test_multiplication[6-66]" time="0.002"></testcase><testcase classname="test_parametrize" file="test_parametrize.py" line="2" name="test_multiplication[7-77]" time="0.002"></testcase></testsuite></testsuites>
